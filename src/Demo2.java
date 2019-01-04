@@ -15,12 +15,11 @@ abstract class A{
         System.out.println("抽象类print方法");
     }
 }
-
 class X extends A{
 }
 public class Demo2 {
     public static void main(String[] args) {
-        X x = new X();
-        x.print();
+        A a = new X();
+        a.print();
     }
 }
