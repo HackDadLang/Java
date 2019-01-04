@@ -15,7 +15,6 @@ class Array{
         }
         return false;
     }
-
     public int[] getData() {
         return this.data;
     }
