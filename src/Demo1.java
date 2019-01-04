@@ -20,6 +20,7 @@ class Array{
         return this.data;
     }
 }
+
 class SortArray extends Array{
     public SortArray(int len){
         super(len);
@@ -29,6 +30,7 @@ class SortArray extends Array{
         return super.getData();
     }
 }
+
 class ReverseArray extends Array{
     public ReverseArray(int len){
         super(len);
@@ -47,6 +49,7 @@ class ReverseArray extends Array{
         return super.getData();
     }
 }
+
 public class Demo1 {
     public static void main(String[] args) {
         ReverseArray arr = new ReverseArray(3);
