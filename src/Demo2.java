@@ -10,16 +10,16 @@
 //    }
 //}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-abstract class A{
-    public void print(){
-        System.out.println("抽象类print方法");
-    }
-}
-class X extends A{
-}
-public class Demo2 {
-    public static void main(String[] args) {
-        A a = new X();
-        a.print();
-    }
-}
+//abstract class A{
+//    public void print(){
+//        System.out.println("抽象类print方法");
+//    }
+//}
+//class X extends A{
+//}
+//public class Demo2 {
+//    public static void main(String[] args) {
+//        A a = new X();
+//        a.print();
+//    }
+//}
