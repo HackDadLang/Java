@@ -104,9 +104,32 @@ class Link{
             this.count--;
         }
     }
+    public Object[] toArray(){
+        if (this.root == null){
+            return null;
+        }
+        this.foot = 0;
+        this.retArray = new Object[this.count];
+        this.root.toArrayNode();
+        return this.retArray;
+    }
+    public void clear(){
+        this.root = null;
+        this.count = 0;
+    }
 }
 public class LinkDemo {
     public static void main(String[] args) {
-
+        Link all = new Link();
+        all.add("A");
+        all.add("B");
+        all.add("C");
+        System.out.println(all.contains("A"));
+        all.remove("A");
+        System.out.println(all.size());
+        Object data[] = all.toArray();
+        for (int i = 0; i < data.length; i++) {
+            System.out.println(data[i]);
+        }
     }
 }
